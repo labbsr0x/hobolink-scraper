@@ -1,0 +1,20 @@
+{
+    "name": "hobolink_date",
+    "description": "Scraps data from hobolink software extracting readouts from a specific day",
+    "version": 1,
+    "tasks": [
+        {
+            "name": "hobolink_date",
+            "taskReferenceName": "scrap",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "username": "${workflow.input.username}",
+                "password": "${workflow.input.password}",
+                "date": "${workflow.input.date}"                
+            }
+        }
+    ],
+    "restartable": true,
+    "workflowStatusListenerEnabled": true,
+    "schemaVersion": 2
+}

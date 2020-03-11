@@ -1,0 +1,20 @@
+{
+    "name": "hobolink_last_hour",
+    "description": "Scraps data from hobolink software extracting readouts from the last hour",
+    "version": 1,
+    "tasks": [
+        {
+            "name": "hobolink_last_hour",
+            "taskReferenceName": "scrap",
+            "type": "SIMPLE",
+            "inputParameters": {
+                "username": "${workflow.input.username}",
+                "password": "${workflow.input.password}"
+            }
+        }
+    ],
+    "failureWorkflow": "cleanup_encode_resources",
+    "restartable": true,
+    "workflowStatusListenerEnabled": true,
+    "schemaVersion": 2
+}

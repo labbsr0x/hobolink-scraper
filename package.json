@@ -2,8 +2,6 @@
   "name": "hobolink-scraper",
   "version": "1.0.0",
   "main": "main.js",
-  "repository": "https://gitlab.sandmanbb.com/perfil-digital-agro/agro-ws/build/hobolink-scraper.git",
-  "author": "Henrique Vieira e Sousa <henrique.vieira@ibm.com>",
   "license": "MIT",
   "scripts": {
     "start": "export DEBUG=info,debug,conductor-nodejs-worker:info,conductor-nodejs-worker:debug && node ./app/main.js"
